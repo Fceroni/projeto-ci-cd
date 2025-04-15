@@ -1,0 +1,13 @@
+name: Meu Primeiro Workflow
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  diga-ola:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Mostra mensagem no terminal
+      run: echo "Olá! Isso é um teste de CI/CD rodando no GitHub Actions!"
